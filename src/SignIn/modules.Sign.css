@@ -1,0 +1,237 @@
+.section-signIN {
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/20876cab-b49d-4957-bbaf-906ceb1c05f1/5f19ff63-0467-4cff-b938-113165af85fc/EG-en-20220117-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.r-side {
+  min-height: 100vh;
+  min-width: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.856);
+}
+.l-side {
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  min-width: 50%;
+}
+/*  */
+.BodyContainer {
+  min-width: 100%;
+  min-height: 100%;
+}
+.signBody {
+  background-color: transparent;
+  /* background-color: turquoise; */
+  min-width: 100%;
+  margin-top: 50px;
+
+  padding: 20px;
+  /* height: 80%; */
+  color: aliceblue;
+}
+.signContainer span {
+  display: block;
+}
+.signBody span {
+  display: block;
+  margin-left: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+.inputs {
+  width: 90%;
+  margin-left: 20px;
+
+  padding: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  background-color: #ff1d56;
+  position: relative;
+  border-radius: 20px;
+  color: aliceblue;
+}
+.inputs:focus {
+  background-color: #ff1d56;
+  color: aliceblue;
+}
+.inputs::placeholder {
+  text-transform: capitalize;
+  padding: 5px;
+  color: aliceblue;
+}
+.inputs:focus::placeholder {
+  color: transparent;
+}
+
+.login-btn {
+  display: block;
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  text-transform: capitalize;
+  color: aliceblue;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+}
+.login-btn::after {
+  content: "";
+  background-color: white;
+  width: 100%;
+  height: 2px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scale(0, 1);
+  transition: all ease 0.75s;
+  transform-origin: left;
+}
+.login-btn:hover::after {
+  transform: scale(1, 1);
+}
+.login-btn:hover {
+  color: #ff1d56;
+}
+
+.platform {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 50%;
+  /* font-size: 20px; */
+}
+.platform span {
+  display: inline;
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.or-word span {
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  color: antiquewhite;
+
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.platfrom-container {
+  height: 40%;
+  background-color: transparent;
+}
+.login-word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  color: #ff1d56;
+  padding-top: 80px;
+}
+.platform button {
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 20px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 18px;
+  position: relative;
+  border-radius: 10px;
+  color: dodgerblue;
+}
+.platform button::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: all ease 0.75s;
+}
+.platform button:hover::after {
+  transform: scale(1, 1);
+}
+.platform span:hover {
+  color: #ff1d56;
+}
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.signup a {
+  display: inline;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 600px) {
+  .r-side {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .l-side {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .l-side {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .l-side {
+    min-width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .l-side {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .l-side {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 912px) {
+  .l-side {
+    width: 100%;
+    height: 100%;
+  }
+}

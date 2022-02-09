@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Libre+Caslon+Text:wght@700&family=Open+Sans:wght@300&family=Oswald&family=Raleway:wght@100&family=Roboto:wght@100&family=ZCOOL+QingKe+HuangYou&display=swap");
+body {
+  overflow-x: hidden;
+}
+.searchSection {
+  height: 100vh;
+  padding: 50px;
+  color: white;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0),
+      rgb(17, 16, 16)
+    ),
+    url("../Images/The-Batman-4k-Wallpaper-1536x864.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inputControl {
+  padding: 15px 20px;
+  background-color: #dadce6d0;
+  color: #000000;
+  border-radius: 15px;
+  border: 0;
+  width: 60%;
+  margin-top: 40px;
+  font-size: larger;
+  margin-right: 20px;
+  transition: ease-in all 0.3s;
+}
+.inputControl:hover {
+  background-color: #090a0eea;
+  border-bottom: 2px solid rgb(240, 238, 238);
+  color: white;
+}
+.title {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 3px;
+}
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.searchIcon {
+  height: 60%;
+  font-size: 3rem;
+  margin-top: 31px;
+  margin-left: 30px;
+  transition: 0.3s all ease-in;
+}
+.searchIcon:hover {
+  border-radius: 50%;
+  background-color: #ff0000;
+  color: white;
+  padding: 30px;
+  box-shadow: 0 0px 20px #f04343;
+}
+.inputControl:focus {
+  color: white;
+}
+.selectionControl {
+  padding: 10px 20px;
+  background-color: #dadce6d0;
+  color: #000000;
+  border-radius: 15px;
+  border: 0;
+  width: 15%;
+  margin-top: 40px;
+  font-size: larger;
+  transition: ease-in all 0.3s;
+}
+.selectionControl:hover {
+  color: white;
+}
+.results {
+  padding: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 575px) {
+  .searchSection {
+    height: 25vh;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .title {
+    font-size: smaller;
+    text-align: center;
+  }
+  .inputControl {
+    font-size: 0.5rem;
+    padding: 5px 5px;
+    margin-right: 0px;
+  }
+  .selectionControl {
+    font-size: 0.5rem;
+    padding: 5px 5px;
+    width: 30%;
+  }
+  .searchIcon {
+    width: 5%;
+  }
+}

@@ -1,0 +1,207 @@
+.appContainer{
+    height: 100vh;
+    background-image:linear-gradient(to bottom, rgb(0, 0, 0), rgba(23, 23, 24, 0.404)), url("../Images/avengers.png");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.homeContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.title
+{
+font-size: 5rem;
+margin-bottom: 50px;
+}
+.content{
+    margin-left: 50px;
+    padding: 50px;
+}
+.appLogo{
+    transform: translateX(100%);
+    animation: animation 2s ease 1 ;
+    transform: translateX(0);
+}
+
+.bttn{
+    font-size: 20px;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+    transition: .3s ease all;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    background-color: transparent;
+    margin-right: 20px;
+}
+
+a:hover{
+    color: white;
+}
+.bttn:hover{
+    background-color:rgb(255, 29, 86);
+}
+.sectionTitle{
+    color: white;
+    font-weight: bold;
+    font-size: 5rem;
+    width: 800px;
+    text-align: center;
+    margin-right: 50px;
+
+}
+.sectionTitle::before{
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 3px;
+    border: solid crimson 3px;
+    top: 50%;
+
+    animation: rotations 1s ease  1;
+}
+.sectionTitle::after{
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 3px;
+    border: solid crimson 3px;
+    top: 50%;
+    right: 8%;
+    animation: rotations 1s ease  1;
+}
+
+@media screen and (max-width:575px) {
+    .appContainer{
+        height: 90vh;
+        width: 100vw;
+    }
+    .homeContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 110vh;
+        width: 100vw;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .title{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .sectionTitle::after{
+        display: none;
+    }
+    .sectionTitle::before{
+        display: none;
+    }
+    .sectionTitle{
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .bttn{
+        width: 100%;
+        margin-bottom: 30px;
+        background-color: crimson;
+        font-size: small;
+    }
+
+}
+
+@media screen and (min-width:576px) and (max-width:769px) {
+    .homeContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .title{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .sectionTitle::after{
+        display: none;
+    }
+    .sectionTitle::before{
+        display: none;
+    }
+    .sectionTitle{
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .bttn{
+        width: 100%;
+        margin-bottom: 30px;
+        background-color: crimson;
+        font-size: small;
+    }
+
+}
+@media screen and (min-width:770px) and (max-width:992px) {
+    .homeContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .title{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .sectionTitle::after{
+        display: none;
+    }
+    .sectionTitle::before{
+        display: none;
+    }
+    .sectionTitle{
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .bttn{
+        width: 100%;
+        margin-bottom: 30px;
+        background-color: crimson;
+        font-size: small;
+    }
+
+}
+@keyframes animation {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes rotations {
+    from{
+        transform: rotate(90deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}

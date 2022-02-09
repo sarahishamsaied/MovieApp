@@ -1,0 +1,287 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  }
+
+  .Main {
+    height: 100vh;
+  }
+  .movieContainer{
+    padding: 80px;
+    background-color: #090A0E;
+    overflow-x: hidden;
+    position: relative;
+  }
+  .title{
+    color: aliceblue;
+    font-weight: lighter;
+    font-size: 20px;
+  }
+  .line{
+    background-color: #FF0044;
+    width: 7%;
+    height: 5px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .pageTitle{
+    font-size: 52px;
+  }
+  .movieHeader{
+    background-image: linear-gradient(to bottom, rgba(27, 27, 29, 0.603), rgba(23, 23, 24, 0.582)),url("../Images/the-meg-1200-1200-675-675-crop-000000.jpg");
+    height: 100vh;
+    background-position:bottom center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 80px;
+  }
+  .movieSectionContent{
+    margin-left: 50px;
+    width: 30%;
+  }
+ 
+  .playBttn{
+    width: 100%;
+  }
+  .icon{
+    width: 100%;
+  }
+  .playIcon a{
+    font-size: 8rem;
+    opacity: .6;
+    color: white;
+    transition: .5s ease all;
+  }
+  .playIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border: .1rem solid rgba(255, 255, 255, 0.123);
+  }
+  .playIcon a:hover{
+    opacity: 1;
+    border: solid 1px rgba(255, 255, 255, 0.123);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.068);
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    background-color: #090A0E;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #FF0044; 
+    border-radius: 20px;
+  }
+ 
+  .display-6{
+    font-size: 6rem;
+  }
+  .headerTitle{
+    font-size: 6rem;
+    font-weight: bolder;
+  }
+  .rating{
+    font-size: 13px;
+    font-weight: lighter;
+  }
+  .itemTitle{
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .overlay{
+    background-color: #090A0E;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .4s ease all;
+  }
+  .overlay:hover{
+    opacity: .8;
+  }
+  .imgContainer{
+    position: relative;
+  } 
+  
+  .heart{
+    opacity: .5;
+    transition: .3s all ease;
+    font-size: larger;
+  }
+  .heart:hover{
+    color: crimson;
+    opacity: 1;
+  }
+  .filter{
+    background-color: transparent;
+    font-size: 16px;
+    width: 30%;
+    color: white;
+    margin-left: 60px;
+    padding: 10px 10px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 3px solid white;
+    transition: ease .4s all;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  
+  }
+ 
+  option{
+    color: white;
+    padding: 10px 10px;
+    background-color: #090A0E;
+    border: 0;
+  }
+  select:focus{
+    border-bottom: 3px solid white;
+    outline: 0;
+  }
+  select:hover{
+    background-color: #101218;
+  }
+  .playBttn{
+    bottom: 40%;
+    position: absolute;
+    font-size: 10rem;
+    color: #FF0044;
+  }
+  /* .detailsBttn{
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+  } */
+  .socialMedia{
+  position: absolute; 
+  right: 1%;
+  top: 3%;
+  font-size: 2.5rem;
+  }
+  .icon{
+    margin-bottom: 20px;
+  }
+  .item{
+    padding-bottom: 30px;
+    transition: ease-in all .3s;
+  }
+.item:hover{
+  border-bottom: 1px solid crimson;
+  box-shadow: 0 15px 15px #000000;
+}
+.scrollUp{
+  bottom: 7%;
+  right: 6%;
+  font-size: 7rem;
+  position: fixed;
+  z-index: 100;
+  color: crimson;
+  transition: .3s ease all;
+}
+
+.discoverButton{
+  background-color: crimson;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  border: 0 ;
+  outline: 0;
+  transition: .5s ease all;
+  color: white;
+  padding: 10px 40px;
+  text-decoration: none;
+}
+.discoverButton:hover{
+  background-color: rgb(241, 62, 98);
+  box-shadow: rgba(223, 4, 4, 0.123) 20px 20px 18px;
+
+}
+.scrollUp:hover{
+  color: #ff5582;
+}
+.upNextContainer{
+  position: absolute;
+  right: 25%;
+  bottom:5%;
+  width: 14%;
+  display: flex;
+}
+.upNextContainer h4{
+  margin-right: 30px;
+  color: white;
+}
+
+@media screen and (max-width:768px ) {
+  .movieHeader{
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 10px;
+}
+.headerTitle{
+  font-size: 22px;
+  margin-top: 30px;
+}
+.socialMedia{
+  font-size: 5px;
+  top: 5%;
+}
+.scrollUp{
+  font-size: 1.7rem;
+}
+.pageTitle{
+  font-size: 27px;
+  color: white;
+}
+.filter{
+  font-size: 10px;
+}
+.line{
+  width: 30%;
+  height: 3px;
+}
+.movieSectionContent{
+  width: 40%;
+margin-left: 20px;
+}
+.movieSectionContent button{
+  font-size: 10px;
+  padding: 5px 15px;
+}
+.title,.itemTitle{
+  font-size: 14px;
+}
+.discoverButton{
+  background-color: crimson;
+  border-radius: 2px;
+  outline: 0;
+  transition: .5s ease all;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: none;
+}
+.playIcon p{
+  font-size: smaller;
+}
+.playIcon a{
+  font-size: larger;
+}
+
+}
+
+
+
+  
+  
