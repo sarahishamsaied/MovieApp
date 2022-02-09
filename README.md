@@ -1,5 +1,7 @@
 > # Project overview
  This responsive web app was created using  ***Advanced JavaScript***  and  ***ReactJs***. It's based on fetching trending movies and Tv Shows from the TMDB Database using api calls. This app is responsible for ***displaying*** information related to films, television series and home videos including all different kinds of ***genres*** only when ***signed in***.
+>
+ ![ezgif-1-42fbe69827](https://user-images.githubusercontent.com/71923204/153291943-04faeb28-4030-48f5-beee-cecf499e534b.gif)
 > # Tools
 > 
 - axios
